@@ -14,7 +14,6 @@ body {
 .grid{
     display: flex;
     flex-wrap: wrap;
-    height: 484px;
 }
 
 .game-container{
@@ -33,7 +32,7 @@ body {
     position: relative;
 }
 
-#game-name{
+.game-name{
     font-size: 40px;
 }
 
