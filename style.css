@@ -18,7 +18,6 @@ body {
 }
 
 .game-container{
-    background-color: rgb(163, 196, 194);
     width: 500px;
     margin: 12px 12px 12px 12px;
     display: flex;
