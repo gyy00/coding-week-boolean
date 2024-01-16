@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Darker Grotesque';
+    padding: 16px;
+    font-size: 30px;
+    background-color: rgb(229, 245, 251);
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.game-container{
+    background-color: rgb(163, 196, 194);
+    width: 500px;
+    margin: 12px 12px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-board{
+    background-color: rgb(255, 244, 199);
+    border: 2px solid rgb(0, 18, 20);
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+#game-name{
+    font-size: 40px;
+}
+
+.score{
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-over{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: rgba(240, 155, 155, 0.5);
+}
+
+.game-over-text{
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P';
+}
+
+.play-again{
+    font-size: 24px;
+    font-family: 'Darker Grotesque';
+    padding: 4px 20px 8px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid rgb(0, 18, 20);
+}
+
+.hidden {
+    display: none;
+}

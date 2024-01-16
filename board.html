@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Board</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="game-container">
+        <header>
+            <span id="game-name">Game Board</span>
+            <div class="score">
+                <span>SCORE:</span>
+                <span>0000</span>
+            </div>
+        </header>
+        <main class="game-board">
+            <div class="grid"></div>
+
+            <div class="game-over hidden">
+                <h2 class="game-over-text">Game <br/> Over</h2>
+                <button class="play-again">Play Again</button>
+            </div>
+        </main>
+        
+    </div>
+
+    
+
+  </body>
+</html>
