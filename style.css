@@ -14,11 +14,11 @@ body {
 .grid{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    height: 484px;
 }
 
 .game-container{
-    width: 500px;
+    width: 484px;
     margin: 12px 12px 12px 12px;
     display: flex;
     flex-direction: column;
@@ -28,8 +28,8 @@ body {
 .game-board{
     background-color: rgb(255, 244, 199);
     border: 2px solid rgb(0, 18, 20);
-    height: 500px;
-    width: 500px;
+    height: 484px;
+    width: 484px;
     position: relative;
 }
 
@@ -43,7 +43,7 @@ body {
     justify-content: space-between;
 }
 
-.game-over{
+.end-game-screen{
     position: absolute;
     top: 0;
     right: 0;
