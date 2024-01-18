@@ -22,11 +22,12 @@ body {
     height: 48px;
     cursor: pointer;
     outline: 1px solid black;
+    text-align: center;
 }
 
 .game-container{
     width: 484px;
-    margin: 12px 12px 12px 12px;
+    margin: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;

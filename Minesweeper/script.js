@@ -43,12 +43,19 @@ for (let i = 1; i <= totalCells; i++) {
         } else {
           cell.classList.add('cell-clicked');
           updateScore();
+
+          if (bombsList.includes(i-1) || bombsList.includes(i+1) || bombsList.includes(i+10) || bombsList.includes(i-10)){
+            cell.innerText = '1';
+          } else if(bombsList.includes(i-9) || bombsList.includes(i+9) || bombsList.includes(i+11) || bombsList.includes(i-11)
+                    || bombsList.includes(i-2) || bombsList.includes(i+2) || bombsList.includes(i+20) || bombsList.includes(i-20)){
+            cell.innerText = '2';
+          }
         }
+
     });
   
     grid.appendChild(cell);
   }
-
 
 
 
