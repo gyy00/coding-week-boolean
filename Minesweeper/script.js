@@ -44,18 +44,36 @@ for (let i = 1; i <= totalCells; i++) {
           cell.classList.add('cell-clicked');
           updateScore();
 
-          if (bombsList.includes(i-1) || bombsList.includes(i+1) || bombsList.includes(i+10) || bombsList.includes(i-10)){
-            cell.innerText = '1';
-          } else if(bombsList.includes(i-9) || bombsList.includes(i+9) || bombsList.includes(i+11) || bombsList.includes(i-11)
-                    || bombsList.includes(i-2) || bombsList.includes(i+2) || bombsList.includes(i+20) || bombsList.includes(i-20)){
-            cell.innerText = '2';
+          if ((bombsList.includes(i-1) && (i%10 !== 1))
+            || (bombsList.includes(i+1) && (i%10 !== 0))
+            || bombsList.includes(i+10)
+            || bombsList.includes(i-10))
+            {
+              cell.innerText = '1';
+          } 
+          else if((bombsList.includes(i-9) && (i%10 !== 2 || i%10 !== 1)) 
+            || (bombsList.includes(i+9) && (i%10 !== 8 || i%10 !== 9))
+            || (bombsList.includes(i+11) && (i%10 !== 8 || i%10 !== 9))
+            || (bombsList.includes(i-11) && (i%10 !== 2 || i%10 !== 1))
+            || (bombsList.includes(i-2) && (i%10 !== 2 || i%10 !== 1))
+            || (bombsList.includes(i+2) && (i%10 !== 8 || i%10 !== 9))
+            || bombsList.includes(i+20) 
+            || bombsList.includes(i-20))
+            {
+              cell.innerText = '2';
           }
+
         }
 
     });
   
     grid.appendChild(cell);
   }
+
+
+function addNumbers(){
+  
+}
 
 
 
