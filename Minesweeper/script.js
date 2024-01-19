@@ -52,11 +52,11 @@ for (let i = 1; i <= totalCells; i++) {
               cell.innerText = '1';
           } 
           else if((bombsList.includes(i-9) && (i%10 !== 2 || i%10 !== 1)) 
-            || (bombsList.includes(i+9) && (i%10 !== 8 || i%10 !== 9))
-            || (bombsList.includes(i+11) && (i%10 !== 8 || i%10 !== 9))
+            || (bombsList.includes(i+9) && (i%10 !== 0 || i%10 !== 9))
+            || (bombsList.includes(i+11) && (i%10 !== 0 || i%10 !== 9))
             || (bombsList.includes(i-11) && (i%10 !== 2 || i%10 !== 1))
             || (bombsList.includes(i-2) && (i%10 !== 2 || i%10 !== 1))
-            || (bombsList.includes(i+2) && (i%10 !== 8 || i%10 !== 9))
+            || (bombsList.includes(i+2) && (i%10 !== 0 || i%10 !== 9))
             || bombsList.includes(i+20) 
             || bombsList.includes(i-20))
             {
